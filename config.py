@@ -26,20 +26,20 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "")
-    API_HASH  = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID    = os.environ.get("API_ID", "28309170")
+    API_HASH  = os.environ.get("API_HASH", "0f393a5ea55883459dfd93e52918cbe7")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7256590511:AAEXChoAs7FMU7Zt2GqDgPACM72TDmvdYPg") 
    
     # database config
-    DB_NAME = os.environ.get("DB_NAME","pyro-botz")     
-    DB_URL  = os.environ.get("DB_URL","")
+    DB_NAME = os.environ.get("DB_NAME","TelegramBot")     
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://kavitech3333:Kavi@3333@telegrambot.7afkozc.mongodb.net/?retryWrites=true&w=majority&appName=TelegramBot")
  
     # other configs
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "")
-    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
-    FORCE_SUB   = os.environ.get("FORCE_SUB", "") 
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL"))
+    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '6026645957').split()]
+    FORCE_SUB   = os.environ.get("FORCE_SUB", "2189700110") 
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL","2245092422"))
     MAX_CONCURRENT_TRANSMISSIONS = int(os.environ.get("MAX_CONCURRENT_TRANSMISSIONS", "2")) # Set the maximum amount of concurrent transmissions (uploads & downloads).
     
     # wes response configuration     
